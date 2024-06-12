@@ -43,3 +43,26 @@ def title():
     stdout.write("             "+Fore.LIGHTCYAN_EX+"╚═════════════════════════════════════════════════════╝\n")
     stdout.write("\n")
 
+def help():
+    stdout.write(it is forbidden to attack .ru/.ps sites)
+    stdout.write(It is prohibited to sell and buy this tool)
+    stdout.write(This tool is for private use only)
+
+def l7():
+    stdout.write(BROWSER)
+    stdout.write(UAM-BYPASS)
+    stdout.write(TLS)
+    stdout.write(ZEUZ)
+#################################################(panel)#############################################
+
+def command():
+    stdout.write(Fore.LIGHTCYAN_EX+"╔═══"+Fore.LIGHTCYAN_EX+"[""root"+Fore.LIGHTGREEN_EX+"@"+Fore.LIGHTCYAN_EX+"root"+Fore.CYAN+"]"+Fore.LIGHTCYAN_EX+"\n╚══\x1b[38;2;0;255;189m> "+Fore.WHITE)
+    command = input()
+    if command == "!clear" 
+        clear()
+        title()
+    elif command == "!help" 
+        help()
+    elif command == "!L7"
+
+        
