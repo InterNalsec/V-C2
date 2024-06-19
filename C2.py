@@ -52,13 +52,13 @@ def home():
     clear()
     print(
         f"""
-    {red}â–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—       â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— 
-    {red}â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘      â–ˆâ–ˆâ•”â•â•â•â•â•â•šâ•â•â•â•â–ˆâ–ˆâ•—
-    {red}â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•
-    {red}â•šâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•”â•â•šâ•â•â•â•â•â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•”â•â•â•â• 
-     {red}â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•       â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—
-      {red}â•šâ•â•â•â•         â•šâ•â•â•â•â•â•â•šâ•â•â•â•â•â•â•
-      {lightwhite}WELCOME BACK TO V-C2
+‎ ‎ ‎ {red}██╗   ██╗       ██████╗██████╗ 
+‎ ‎ ‎ {red}‎██║   ██║      ██╔════╝╚════██╗
+‎ ‎ ‎ {red}‎██║   ██║█████╗██║      █████╔╝
+‎ ‎ ‎ ‎ {red}‎‎██╗ ██╔╝╚════╝██║     ██╔═══╝ 
+ ‎ ‎ ‎ ‎{red}‎╚████╔╝       ╚██████╗███████╗
+  ‎ ‎ ‎ ‎{red}╚═══╝         ╚═════╝╚══════╝
+    {lightwhite}WELCOME BACK TO V-C2
       {lightwhite}MADE BY {gray}@CIA_GOV
       {lightwhite}ONLINE BOT = {red}{bots}"""
     )
@@ -67,11 +67,11 @@ def home():
 def help():
     print(
         f"""
-LAYER7  â–º SHOW LAYER7 METHODS
-LAYER4  â–º SHOW LAYER4 METHODS
-RULES   â–º RULES PANEL
-TOOLS   â–º SHOW TOOLS
-CLEAR   â–º CLEAR TERMINAL
+LAYER7  > SHOW LAYER7 METHODS
+LAYER4  > SHOW LAYER4 METHODS
+RULES   > RULES PANEL
+TOOLS   > SHOW TOOLS
+CLEAR   > CLEAR TERMINAL
             """
     )
 
@@ -79,11 +79,11 @@ CLEAR   â–º CLEAR TERMINAL
 def rules():
     print(
         f"""
-    â€¢ ATTACKING THE .PS/.RU DOMAIN IS PROHIBITED
-    â€¢ DO NOT CONTINUE ATTACKS AT THE SAME TIME 
-    â€¢ MUST HAVE AN HTTP PROXY 
-    â€¢ DOES NOT PROVIDE ADDITIONS 
-    â€¢ CAN ONLY PORT 80/443"""
+    > ATTACKING THE .PS/.RU DOMAIN IS PROHIBITED
+    > DO NOT CONTINUE ATTACKS AT THE SAME TIME 
+    > MUST HAVE AN HTTP PROXY 
+    > DOES NOT PROVIDE ADDITIONS 
+    > CAN ONLY PORT 80/443"""
     )
 
 
