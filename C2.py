@@ -111,18 +111,7 @@ def layer4():
 
 def main():
     stdout.write(
-        Fore.LIGHTCYAN_EX + "â•”â•â•â•" + Fore.LIGHTCYAN_EX + "["
-        "root"
-        + Fore.LIGHTGREEN_EX
-        + "@"
-        + Fore.LIGHTCYAN_EX
-        + "root"
-        + Fore.CYAN
-        + "]"
-        + Fore.LIGHTCYAN_EX
-        + "\nâ•šâ•â•\x1b[38;2;0;255;189m> "
-        + Fore.WHITE
-    )
+    stdout.write(Fore.LIGHTCYAN_EX+"╔═══"+Fore.LIGHTCYAN_EX+"[""root"+Fore.LIGHTGREEN_EX+"@"+Fore.LIGHTCYAN_EX+"root"+Fore.CYAN+"]"+Fore.LIGHTCYAN_EX+"\n╚══\x1b[38;2;0;255;189m> "+Fore.WHITE)
     command = input()
     if command == "cls" or command == "!clear":
         clear()
