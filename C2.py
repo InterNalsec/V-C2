@@ -1,12 +1,5 @@
 #include#
-import socket
-import os
-import requests
-import random
-import getpass
-import time
-import sys
-import colorama
+import socket import os import requests import random import getpass import time import sys import colorama
 
 #color
 def color(data_input_output):
