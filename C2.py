@@ -102,12 +102,12 @@ def main():
             except IndexError:
                 print('Usage: !http-tls <target> <time>')
                 print('Example: !http-tls https://google.com 60')
-    else:
-            try:
-                command = cnc.split()[0]
-                print("Command: [ " + command + " ] Not Found!")
-            except IndexError:
-                pass
+                else:
+                    try:
+                        command = cnc.split()[0]
+                        print("Command: [ " + command + " ] Not Found!")
+                    except IndexError:
+                        pass
     
 
 #end
