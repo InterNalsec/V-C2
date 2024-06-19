@@ -93,7 +93,16 @@ def L7():
     \x1b[38;2;0;212;14m║ HTTP-ENGINE ‎ ║ ‎ HTTP-STROM ‎ ║‎  HTTP-SOCKET‎ ║‎ HTTP-HCAP║
     \x1b[38;2;0;212;14m╚═══════════════════════════════════════════════╝
 ''')
-
+def main():
+    home()
+    while(True):
+        cnc = input('''{lightwhite}root@root{gray}''')
+        if cnc == "L7" or cnc == "LAYER7" or cnc == "!L7":
+            L7()
+        elif cnc == "!LIST" or cnc == "!LS":
+            list()
+        elif cnc == "!help":
+            help()
 
 def login():
     clear()
