@@ -110,8 +110,8 @@ def layer4():
 
 
 def main():
-    stdout.write(
-    stdout.write(Fore.LIGHTCYAN_EX+"╔═══"+Fore.LIGHTCYAN_EX+"[""root"+Fore.LIGHTGREEN_EX+"@"+Fore.LIGHTCYAN_EX+"root"+Fore.CYAN+"]"+Fore.LIGHTCYAN_EX+"\n╚══\x1b[38;2;0;255;189m> "+Fore.WHITE)
+    home()
+    command = input('''{lightwhite}root@root# ''')
     command = input()
     if command == "cls" or command == "!clear":
         clear()
@@ -166,7 +166,7 @@ def login():
     elif username == user and password == passwd:
         print("Welcome to V-CnC!")
         time.sleep(0.3)
-        home()
+        main()
 
 
 login()
